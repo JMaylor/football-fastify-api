@@ -12,11 +12,10 @@ module.exports = async function (fastify, opts) {
           type: "array",
           items: {
             type: "object",
-            required: ["competition_id", "competition_name", "sport_name"],
+            required: ["competition_id", "competition_name"],
             properties: {
               competition_id: { type: "integer" },
               competition_name: { type: "string" },
-              sport_name: { type: "string" },
             },
           },
         },
