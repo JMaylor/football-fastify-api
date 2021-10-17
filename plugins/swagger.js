@@ -20,7 +20,7 @@ module.exports = fp(async function (fastify, opts) {
       host:
         environment == "development"
           ? "localhost:5000"
-          : "https://football-info-data.herokuapp.com",
+          : "football-info-data.herokuapp.com",
       schemes: ["http", "https"],
       consumes: ["application/json"],
       produces: ["application/json"],
