@@ -9,7 +9,10 @@
   "scripts": {
     "test": "tap \"test/**/*.test.js\"",
     "start": "node server.js",
-    "dev": "fastify start -w -l info -P app.js -p 5000"
+    "dev": "fastify start -w -l info -P app.js -p 5000",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +28,6 @@
     "pg": "^8.6.0"
   },
   "devDependencies": {
-    "tap": "^15.0.9"
+    "vitepress": "^0.20.0"
   }
 }
