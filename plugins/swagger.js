@@ -2,6 +2,8 @@
 
 const fp = require("fastify-plugin");
 
+const environment = process.env.NODE_ENV || "development";
+
 module.exports = fp(async function (fastify, opts) {
   fastify.register(require("fastify-swagger"), {
     routePrefix: "/documentation",
@@ -15,7 +17,10 @@ module.exports = fp(async function (fastify, opts) {
         url: "https://maylor.io",
         description: "Read more about this API on my blog.",
       },
-      host: "localhost:5000",
+      host:
+        environment == "development"
+          ? "localhost:5000"
+          : "https://football-info-data.herokuapp.com/",
       schemes: ["http", "https"],
       consumes: ["application/json"],
       produces: ["application/json"],
