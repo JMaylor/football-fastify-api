@@ -10,6 +10,7 @@ const environment = process.env.NODE_ENV || "development";
 module.exports = fp(async function (fastify, opts) {
   fastify.register(require("fastify-postgres"), {
     connectionString: process.env.DATABASE_URL,
-    ssl: environment == "development" ? false : true,
+    // ssl: environment == "development" ? false : true,
+    ssl: { rejectUnauthorized: false },
   });
 });
