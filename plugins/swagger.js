@@ -13,7 +13,7 @@ module.exports = fp(async function (fastify, opts) {
         version: "0.1.0",
       },
       externalDocs: {
-        url: "https://maylor.io",
+        url: "https://www.football.maylor.io",
         description: "Read more about this API on my blog.",
       },
       tags: [
