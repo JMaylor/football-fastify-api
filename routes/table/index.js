@@ -18,6 +18,7 @@ module.exports = async function (fastify, opts) {
             required: [
               "team_id",
               "team_name",
+              "deductions",
               "played",
               "won",
               "lost",
@@ -30,6 +31,7 @@ module.exports = async function (fastify, opts) {
             properties: {
               team_id: { type: "integer" },
               team_name: { type: "string" },
+              deductions: { type: "integer" },
               played: { type: "integer" },
               won: { type: "integer" },
               lost: { type: "integer" },
