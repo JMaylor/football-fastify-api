@@ -10,7 +10,7 @@ The base url for the data is https://www.api.football.maylor.io.
 
 For example, https://www.api.football.maylor.io/competitions shows a list of all the leagues that are covered by the data. You can find out about the other endpoints below.
 
-If you run into any problems, or want to request any particular endpoints, please e-mail me at joseph@maylor.io - or open an issue on GitHub.
+If you run into any problems, or want to request any particular endpoints, please e-mail me at joseph@maylor.io - or open an issue on [GitHub](https://github.com/JMaylor/football-fastify-api).
 
 ## Data
 
