@@ -1,4 +1,4 @@
-# About
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bf994bff-54d9-4087-9eea-d104a072a779/deploy-status)](https://app.netlify.com/sites/suspicious-hypatia-63900c/deploys) 
 
 ## Intro
 
@@ -30,7 +30,7 @@ You can view the technical swagger documentation [here](https://www.api.football
 
 For an idea of how to navigate the data, first navigate to the /competitions endpoint and choose a competition id.
 
-```json{1,4}
+```json
 # /competitions
 [
   {
@@ -47,7 +47,7 @@ For an idea of how to navigate the data, first navigate to the /competitions end
 
 Go to the seasons endpoint and get all the available seasons for this competition. Choose a season id.
 
-```json{1,12}
+```json
 # /seasons/1
 [
   {
@@ -72,7 +72,7 @@ Go to the seasons endpoint and get all the available seasons for this competitio
 
 Get the final league table for this season:
 
-```json{1,16}
+```json
 # /table/37
 [
   {
@@ -113,7 +113,7 @@ Display the data on your site:
 
 Look at detailed stats for all the fixtures a team played in a particular season.
 
-```json{1}
+```json
 # /fixtures/37?teamId=15
 [
   {
@@ -149,7 +149,7 @@ Look at detailed stats for all the fixtures a team played in a particular season
 
 Get all the fixtures two teams have played against each other in history
 
-```json{1}
+```json
 # /fixtures/15/28
 [
   {
