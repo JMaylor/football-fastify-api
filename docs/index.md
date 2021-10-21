@@ -8,10 +8,10 @@ actionText: Get Started
 actionLink: /about/
 features:
   - title: Free
-    details: I gained enough in experience while developing this tool, so I am providing it at no cost.
+    details: You are free to use the API. Please add to your acknowledgements where possible.
   - title: Detailed
     details: European football data, covering 11 countries, 21 leagues, and 278 seasons going back to 2000/01.
   - title: Fast
-    details: Built using Fastify ⚡ and Postgres 👌.
-footer: Made by Joe Maylor
+    details: Built using Fastify, PostgreSQL and more.
+# footer: Made by Joe Maylor
 ---
