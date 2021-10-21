@@ -6,7 +6,6 @@ const environment = process.env.NODE_ENV || "development";
 
 module.exports = fp(async function (fastify, opts) {
   fastify.register(require("fastify-swagger"), {
-    routePrefix: "/documentation",
     swagger: {
       info: {
         title: "Sports Data API",
@@ -17,10 +16,14 @@ module.exports = fp(async function (fastify, opts) {
         url: "https://maylor.io",
         description: "Read more about this API on my blog.",
       },
-      host:
-        environment == "development"
-          ? "localhost:5000"
-          : "football-info-data.herokuapp.com",
+      tags: [
+        { name: "Healthcheck" },
+        { name: "Competitions" },
+        { name: "Seasons" },
+        { name: "Teams" },
+        { name: "Table" },
+        { name: "Fixtures" },
+      ],
       schemes: environment == "development" ? ["http"] : ["https"],
       consumes: ["application/json"],
       produces: ["application/json"],

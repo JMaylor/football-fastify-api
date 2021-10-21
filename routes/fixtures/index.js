@@ -5,7 +5,7 @@ module.exports = async function (fastify, opts) {
     method: "GET",
     url: "/:seasonId",
     schema: {
-      tags: ["fixtures"],
+      tags: ["Fixtures"],
       description: "Get all the fixtures a club played in a season.",
       params: {
         seasonId: { type: "integer" },
@@ -132,7 +132,7 @@ module.exports = async function (fastify, opts) {
     method: "GET",
     url: "/versus/:teamOne/:teamTwo",
     schema: {
-      tags: ["fixtures"],
+      tags: ["Fixtures"],
       description:
         "Get all the fixtures two teams have played against each other.",
       params: {

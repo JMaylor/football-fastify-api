@@ -5,7 +5,7 @@ module.exports = async function (fastify, opts) {
     method: "GET",
     url: "/",
     schema: {
-      tags: ["healthcheck"],
+      tags: ["Healthcheck"],
       description:
         "Healthcheck endpoint to determine if service is up and running",
       response: {

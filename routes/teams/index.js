@@ -5,7 +5,7 @@ module.exports = async function (fastify, opts) {
     method: "GET",
     url: "/",
     schema: {
-      tags: ["teams"],
+      tags: ["Teams"],
       description: "Get all teams",
       response: {
         200: {
@@ -38,7 +38,7 @@ module.exports = async function (fastify, opts) {
     method: "GET",
     url: "/:seasonId",
     schema: {
-      tags: ["teams"],
+      tags: ["Teams"],
       description: "Get all teams involved in a season",
       params: {
         seasonId: { type: "integer" },

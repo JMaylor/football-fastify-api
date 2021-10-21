@@ -5,7 +5,7 @@ module.exports = async function (fastify, opts) {
     method: "GET",
     url: "/",
     schema: {
-      tags: ["competitions"],
+      tags: ["Competitions"],
       description: "Get all competitions",
       response: {
         200: {

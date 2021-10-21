@@ -5,7 +5,7 @@ module.exports = async function (fastify, opts) {
     method: "GET",
     url: "/:seasonId",
     schema: {
-      tags: ["table"],
+      tags: ["Table"],
       description: "Get the final league table for a season",
       params: {
         seasonId: { type: "integer" },
