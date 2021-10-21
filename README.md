@@ -1,4 +1,4 @@
-# About
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bf994bff-54d9-4087-9eea-d104a072a779/deploy-status)](https://app.netlify.com/sites/suspicious-hypatia-63900c/deploys) 
 
 ## Intro
 
