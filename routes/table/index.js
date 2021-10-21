@@ -16,6 +16,7 @@ module.exports = async function (fastify, opts) {
           items: {
             type: "object",
             required: [
+              "team_id",
               "team_name",
               "played",
               "won",
@@ -27,6 +28,7 @@ module.exports = async function (fastify, opts) {
               "points",
             ],
             properties: {
+              team_id: { type: "integer" },
               team_name: { type: "string" },
               played: { type: "integer" },
               won: { type: "integer" },
